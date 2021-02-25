@@ -42,13 +42,17 @@
 :root{
   --primary-white:#fff;
   --primary-orange:#f9ab00;
+  --primary-red: #ff0000;
   --primary-dark: rgba(255,255,255,0);
 }
 
 body{
-  font-family: "Roboto slab" sans-serif;
+  font-family: "Roboto slab", sans-serif;
 }
 /**********navbar**********/
+nav{
+  z-index: 2;
+}
 .logo {
   width: 2.25rem;
 }
@@ -86,4 +90,64 @@ nav ul li{
 
 .navbar-nav> li> a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/*****header*****/
+
+.header-wraper{
+  position: relative;
+  background: url(code1.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto slab", sans-serif;
+}
+
+.main-info h1{
+  color: var(--primary-white);
+  text-transform: uppercase;
+}
+
+/********typed****/
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin-top: 2rem;
+  z-index: 2;
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  transition: 0.3s ease-in-out;
+}
+
+/******particle-js********/
+
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
 }
