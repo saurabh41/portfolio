@@ -3,9 +3,8 @@ import Typed from "react-typed";
 
  const Header=() => {
     return (
-        <div className="header-wraper">
-            <div className="main-info">
-            <h1>hello world</h1>            
+        <div className="header-wraper">            
+            <div className="main-info">                       
             <Typed
             className="typed-text"
             strings={["Eat","code","sleep","repeat"]}

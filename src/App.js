@@ -1,8 +1,15 @@
 import "./App.css";
+import React from "react";
 import Particles from "react-particles-js"
-import  Header from "./component/Header";
 import  "bootstrap/dist/css/bootstrap.min.css";
+import  Header from "./component/Header";
 import Navbar from "./component/Navbar";
+import About from "./component/About";
+import Services from "./component/Services";
+import Skills from "./component/Skills";
+import Contact from "./component/Contact";
+import Footer from "./component/Footer";
+import firebase from "./component/fire";
 function App() {
   return (
     <>
@@ -30,6 +37,11 @@ function App() {
     />
     <Navbar />
     <Header />
+    <About />
+    <Services />
+    <Skills />
+    <Contact />
+    <Footer />
     </>
     );
 }
